@@ -2,28 +2,23 @@ TODO :
 
 
 ***Critical
--Learn how to connect Sign Up page form to an E-mail or some form database
--Set up Loom Chrome website pictures on Works page
--Add Droplit site to Works page (use no-side bar?)
+
 -Add DNS to Netlify
 -Setup up SSL
-
-
-
-
-
-
-
+-Add Phone Number for customer (mine AND there's on form)
+-Logo Setup Fiverr
+-Implement new Logo
+-Add Analytics
 
 
 
 **Important
 -Add a Google Analytics section to Works page
 -Add a back to top button 
--Put floating head + tesimonials on sign up page
-
-
-
+-Allow 'Enter" button to submit form
+-Fix Testimonial Design/Look
+-Testimonial links?
+-Price Info?
 
 
 
@@ -37,7 +32,17 @@ TODO :
 
 
 Finished___:
--Change "hottest website on the block" on hero
--Change accent color website
--Change fontawesome icons index.html
--Work on a logo
+-Change "hottest website on the block" on hero(I)
+-Change accent color website(I)
+-Change fontawesome icons index.html(SD)
+-Work on a logo(C)
+-Learn how to connect Sign Up page form to an E-mail or some form database(C)
+-Add Droplit site to Works page (use no-side bar?)(C)
+-FIX FORM SUBMISSION(C)
+-Set up Loom Chrome website pictures on Works page(C)
+-Finish testimonials sign up page(I)
+-Fix footer on sign-up page(C)
+-Put floating head + tesimonials on sign up page(I)
+-Try different color on hero gradient(SD)
+-Add sign up button on hero for mobile design(C)
+

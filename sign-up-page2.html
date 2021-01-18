@@ -1,0 +1,163 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Sign-Up</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+			<header id="header">
+				<!-- <h1 id="logo"><a href="index.html"><i class="fas fa-flask"></i>Weboratory</a></h1> -->
+				<!-- <img class="svgFlask" src="assets/css/images/svgFlask1.png">
+				<h1 id="logo"><a href="index.html">Weboratory</a></h1> -->
+				<span id="logo"><img src="./images/logos/Transparent/TransparentWeboratory-04 (2) - Copy.png" alt=""></span>
+			
+
+				<nav id="nav">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li>
+							<a href="works-page.html">Our Work</a>
+						
+						</li>
+						<li><a href="contact-us.html">Contact</a></li>
+						<li><a href="sign-up-page.html" class="button primary">Sign Up</a></li> 
+					</ul>
+				</nav>
+			</header>
+            
+			<!-- Main -->
+            <div class="col-12"><span class="image fit"><img src="images/sign-looking (2).jpg" alt="" /></span></div>
+				<div id="main" class="wrapper style1 ">
+					<div class="container signUpText">
+                       
+						<header class="major">
+							<h2>Time to Build Your New Website</h2>
+							<p>Provide us with your details below. What type of business will the website be for? Select whether you have an existing website or you're starting fresh. If you are ready to begin and want a consultation right away, check the box. Also, we'd love to hear any thoughts or questions you have for us in the message box. We'll get back to you very soon!</p>
+						</header>
+						
+
+						
+
+						<!-- Form -->
+							<section>
+								<h3>Start Here</h3>
+								
+								<form name='signUpForm' method='post' action='#' data-netlify-recaptcha='true'><input type='hidden' name='form-name' value='signUpForm' />
+									<div class="row gtr-uniform gtr-50">
+										<div class="col-6 col-12-xsmall">
+											<input type="text" name="name" id="name" value="" placeholder="Full Name" required/>
+										</div>
+										<div class="col-6 col-12-xsmall">
+											<input type="email" name="email" id="email" value="" placeholder="Email Address" required/>
+										</div>
+										<div class="col-6 col-12-xsmall">
+											<input type="tel" name="phone" id="phone" value="" placeholder="Phone Number (optional)" />
+										</div>
+										<div class="col-12">
+											<select name="category" id="category">
+												<option value="">- Business Category -</option>
+												<option value="Business_Service">Business Services</option>
+												<option value="Food_Restaurant">Food and Restaurant</option>
+												<option value="Gen_Retail">General Retail</option>
+												<option value="Personal_Site">Personal Site</option>
+												<option value="Beauty_Fitness">Health, Beauty, Fitness</option>
+												<option value="Automotive">Automotive</option>
+												<option value="Tech">Technology</option>
+												<option value="Travel">Travel and Lodging</option>
+												<option value="Gov">Government</option>
+												<option value="Sports_Rec">Sports and Recreation</option>
+												<option value="Other">Other</option>
+												
+											</select>
+										</div>
+										<div class="col-4 col-12-medium">
+											<input type="radio" id="priority-low" name="priority" checked>
+											<label for="priority-low">I have an existing website</label>
+										</div>
+										<div class="col-4 col-12-medium">
+											<input type="radio" id="priority-normal" name="priority">
+											<label for="priority-normal">I do not have a website</label>
+										</div>
+										<!-- <div class="col-4 col-12-medium">
+											<input type="radio" id="priority-high" name="priority">
+											<label for="priority-high">High Priority</label>
+										</div> -->
+										<!-- <div class="col-6 col-12-medium">
+											<input type="checkbox" id="copy" name="copy">
+											<label for="copy">Email me a copy of this message</label>
+										</div> -->
+										<div class="col-6 col-12-medium">
+											<input type="checkbox" id="human" name="human" checked>
+											<label for="human">I am ready for a consultation</label>
+										</div>
+										<div class="col-12">
+											<textarea name="message" id="message" placeholder="Send us a message" rows="6"></textarea>
+										</div>
+										<div><script src='https://www.google.com/recaptcha/api.js'></script>
+<div class='g-recaptcha' data-sitekey='6LdAvUIUAAAAAHjrjmjtNTcXyKm0WKwefLp-dQv9'></div>
+<noscript>
+  <div>
+  <div style="width: 302px; height: 422px; position: relative;">
+  <div style="width: 302px; height: 422px; position: absolute;">
+  <iframe src="https://www.google.com/recaptcha/api/fallback?k=6LdAvUIUAAAAAHjrjmjtNTcXyKm0WKwefLp-dQv9" frameborder="0" scrolling="no"
+    style="width: 302px; height:422px; border-style: none;">
+  </iframe>
+  </div>
+  </div>
+  <div style="width: 300px; height: 60px; border-style: none; bottom: 12px; left: 25px; margin: 0px; padding: 0px; right: 25px; background: #f9f9f9; border: 1px solid #c1c1c1; border-radius: 3px;">
+    <textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response"
+      style="width: 250px; height: 40px; border: 1px solid #c1c1c1; margin: 10px 25px; padding: 0px; resize: none;" >
+    </textarea>
+  </div>
+  </div>
+</noscript>
+</div>
+										<div class="col-12">
+											<ul class="actions">
+												<li><input type="submit" value="Send Details" class="primary" /></li>
+												<li><input type="reset" value="Reset" /></li>
+											</ul>
+										</div>
+									</div>
+								</form>
+							</section>
+      
+					</div>
+				</div>
+
+			<!-- Footer -->
+				<footer id="footer">
+					<ul class="icons">
+						<li><a href="#" class="icon brands  fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon brands  fa-facebook-f"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon brands  fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+						<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Weboratory, Greenville, SC</li><li>Design Inspiration: <a href="#">HTML5UP</a></li>
+					</ul>
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

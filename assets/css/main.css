@@ -1,6 +1,7 @@
 @import url("fontawesome-all.min.css");
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,100italic,300italic");
-
+@import url('https://fonts.googleapis.com/css2?family=Voces&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:wght@700&display=swap');
 /*
 	Landed by HTML5 UP
 	html5up.net | @ajlkn
@@ -8,7 +9,7 @@
 */
 
 :root {
-	--primaryAccentColor: #4db0f3;
+	--primaryAccentColor: #9c4f62;
 }
 
 
@@ -89,7 +90,10 @@ input, select, textarea {
 
 	html, body {
 		background: #1c1d26;
+		
 	}
+
+	
 
 	body.is-preload *, body.is-preload *:before, body.is-preload *:after {
 		-moz-animation: none !important;
@@ -227,7 +231,11 @@ input, select, textarea {
 			padding: 1em 1.5em;
 			overflow-x: auto;
 		}
-
+	
+	video {
+		
+	}
+	
 	.align-left {
 		text-align: left;
 	}
@@ -240,6 +248,111 @@ input, select, textarea {
 		text-align: right;
 	}
 
+/*-----Testimonial-------*/
+
+.testimonial-container {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 8rem;
+}
+.hr-testimonial {
+	color: var(--primaryAccentColor);
+	
+}
+.h1-testimonial {
+	margin-top: 5rem;
+	font-weight: bold;
+	font-size: 3rem;
+	color: rgb(228, 228, 228);
+	font-family: Inria Sans', sans-serif;
+}
+.h1-container {
+	text-align: center;
+}
+figure.snip1192 {
+	font-family: 'Raleway', Arial, sans-serif;
+	position: relative;
+	overflow: hidden;
+	margin: 10px;
+	min-width: 220px;
+	max-width: 310px;
+	width: 100%;
+	color: #333;
+	text-align: left;
+	box-shadow: none !important;
+  }
+  figure.snip1192 * {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+  }
+  figure.snip1192 img {
+	max-width: 100%;
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
+	margin-bottom: 15px;
+	display: inline-block;
+	z-index: 1;
+	position: relative;
+  }
+  .snip1192.pixel img{
+	  background: white;
+	  height: 100%;
+  }
+  figure.snip1192 blockquote {
+	margin: 0;
+	display: block;
+	border-radius: 8px;
+	position: relative;
+	background-color: #dfdddd;
+	padding: 30px 50px 65px 50px;
+	font-size: 0.8em;
+	font-weight: 500;
+	margin: 0 0 -50px;
+	line-height: 1.6em;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  }
+  figure.snip1192 blockquote:before,
+  figure.snip1192 blockquote:after {
+	font-family: 'FontAwesome';
+	content: "\201C";
+	position: absolute;
+	font-size: 50px;
+	opacity: 0.3;
+	font-style: normal;
+  }
+  figure.snip1192 blockquote:before {
+	top: 35px;
+	left: 20px;
+  }
+  figure.snip1192 blockquote:after {
+	content: "\201D";
+	right: 20px;
+	bottom: 35px;
+  }
+  figure.snip1192 .author {
+	margin: 0;
+	text-transform: uppercase;
+	text-align: center;
+	color: #ffffff;
+  }
+  figure.snip1192 .author h5 {
+	opacity: 0.8;
+	margin: 0;
+	font-weight: 800;
+  }
+  figure.snip1192 .author h5 span {
+	font-weight: 400;
+	text-transform: none;
+	display: block;
+  }
+  /* Demo purposes only */
+  body {
+	background-color: #212121;
+  }
+  
+
+  
 /* Loader */
 
 	@-moz-keyframes spinner-show {
@@ -2226,6 +2339,7 @@ input, select, textarea {
 	input[type="text"],
 	input[type="password"],
 	input[type="email"],
+	input[type="tel"],
 	select,
 	textarea {
 		-moz-appearance: none;
@@ -2250,6 +2364,7 @@ input, select, textarea {
 		input[type="text"]:invalid,
 		input[type="password"]:invalid,
 		input[type="email"]:invalid,
+		input[type="tel"]:invalid,
 		select:invalid,
 		textarea:invalid {
 			box-shadow: none;
@@ -2258,6 +2373,7 @@ input, select, textarea {
 		input[type="text"]:focus,
 		input[type="password"]:focus,
 		input[type="email"]:focus,
+		input[type="tel"]:focus,
 		select:focus,
 		textarea:focus {
 			border-color: var(--primaryAccentColor);
@@ -2289,6 +2405,7 @@ input, select, textarea {
 	input[type="text"],
 	input[type="password"],
 	input[type="email"],
+	input[type="tel"],
 	select {
 		height: 3em;
 	}
@@ -2607,6 +2724,14 @@ input, select, textarea {
 					border-top: 0;
 					padding-top: 0;
 				}
+
+		ul.alt i {
+			margin-right: 1rem;
+		}
+
+		ul.contactPage {
+			text-align: center;;
+		}
 
 	dl {
 		margin: 0 0 2em 0;
@@ -2942,6 +3067,26 @@ input, select, textarea {
 			opacity: 0.25;
 		}
 
+	.indexBtn a.button.primary.fit {
+		width: 15rem;
+		margin: 6rem 26.1rem 0 0;
+		/* background: rgba(120, 165, 231, 0.5); */
+		/* background: rgba(64, 208, 252, 0.5); */
+		background: rgba(81, 213, 253, 0.5);
+	}
+
+	.signBtn li {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		list-style: none;
+		width: 15rem;
+	}
+
+	a.blueBtn.primary.button {
+		background: rgba(81, 213, 253, 0.5);
+	}
+
 /* Goto Next */
 
 	.goto-next {
@@ -2974,6 +3119,7 @@ input, select, textarea {
 			width: 2em;
 			z-index: 1;
 		} 
+
 
 /* Spotlight */
 
@@ -3219,6 +3365,7 @@ input, select, textarea {
 			.wrapper.style2 input[type="text"]:focus,
 			.wrapper.style2 input[type="password"]:focus,
 			.wrapper.style2 input[type="email"]:focus,
+			.wrapper.style2 input[type="tel"]:focus,
 			.wrapper.style2 select:focus,
 			.wrapper.style2 textarea:focus {
 				border-color: rgba(255, 255, 255, 0.5);
@@ -3399,25 +3546,33 @@ input, select, textarea {
 		z-index: 100;
 	}
 
+	#header span#logo img{
+		height: 57px;
+		margin: .5rem 0 0 1.2rem;
+	}
+/* 
+	#header .svgFlask {
+		height: 38px;
+		margin: 12px 3px 0 35px;
+		
+	}
 
 		#header #logo {
-			height: inherit;
+			height: 20px;
 			left: 1.25em;
 			line-height: inherit;
-			margin: 0;
+			margin:0;
 			position: absolute;
 			top: 0;
 		}
 
 		#header #logo{
 			color: var(--primaryAccentColor);
-			font-weight: bold;			
-		}
-
-		#header .top-logo img {
-			position: absolute;
-			height: 74px;
-		}
+			font-family: 'Voces', cursive;
+			font-size: 1.4rem;
+			font-weight: bold;	
+			margin: 4px 0 0 55px;	
+		} */
 
 		#header nav {
 			position: absolute;
@@ -3461,6 +3616,41 @@ input, select, textarea {
 					#header nav ul li > ul {
 						display: none;
 					}
+		/*------ Contact Us page Info------------*/
+		.contactPage {
+			margin-left: 1.85rem;
+		}
+		.contactPage a {
+			/* text-decoration: none; */
+			/* color: white; */
+			margin-right: 1rem;
+		}
+		.contactPage .actions input{
+			margin-top: .6rem;
+			width: 20rem;
+			/* height: 3rem; */
+		}
+
+		.contactUs h3{
+			/* color: var(--primaryAccentColor); */
+			/* color:  rgba(81, 213, 253, 0.5); */
+			text-align: center;
+			margin-right: 1.6rem;
+		}
+
+		/* Contact Us Forms */
+		#nameContact,
+		#emailContact,
+		#phoneContact{
+			min-width: 20rem;
+		}
+
+		#emailContact,
+		#phoneContact {
+			margin-top: .5rem;
+		}
+
+		/* End Contact Us page Info */
 
 	body.landing #page-wrapper {
 		padding-top: 0;
@@ -3500,8 +3690,14 @@ input, select, textarea {
 			background-image: -moz-linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
 			background-image: -webkit-linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
 			background-image: -ms-linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
-			background-image: linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
-			content: '';
+			background-image: linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");; 
+
+
+			/* background-image: -moz-linear-gradient(rgba(20, 21, 29, 0.97), 96%, rgba(151, 94, 94, 0.95)), url("images/overlay.png");;
+			background-image: -webkit-linear-gradient(rgba(20, 21, 29, 0.97), 96%,  rgba(151, 94, 94, 0.95)), url("images/overlay.png");;
+			background-image: -ms-linear-gradient(rgba(20, 21, 29, 0.97), 96%, rgba(151, 94, 94, 0.95)), url("images/overlay.png");;
+			background-image: linear-gradient(rgba(20, 21, 29, 0.97), 96%,  rgba(151, 94, 94, 0.95)), url("images/overlay.png");; */
+			content: ''; 
 			display: block;
 			height: 100%;
 			left: 0;
@@ -3556,12 +3752,72 @@ input, select, textarea {
 		background-attachment: scroll;
 	}
 
+	.banner-contact:after {
+		background-color: black;
+	}
+
 /* Footer */
 
-	#footer {
+#footer {
+	background: #272833;
+	padding: 6em 0;
+	text-align: center;
+}
+
+	#footer .icons .icon.alt {
+		text-decoration: none;
+	}
+
+		#footer .icons .icon.alt:before {
+			-moz-osx-font-smoothing: grayscale;
+			-webkit-font-smoothing: antialiased;
+			display: inline-block;
+			font-style: normal;
+			font-variant: normal;
+			text-rendering: auto;
+			line-height: 1;
+			text-transform: none !important;
+			font-family: 'Font Awesome 5 Free';
+			font-weight: 400;
+		}
+
+		#footer .icons .icon.alt:before {
+			color: #272833 !important;
+			text-shadow: 1px 0 0 rgba(255, 255, 255, 0.5), -1px 0 0 rgba(255, 255, 255, 0.5), 0 1px 0 rgba(255, 255, 255, 0.5), 0 -1px 0 rgba(255, 255, 255, 0.5);
+		}
+
+	#footer .copyright {
+		color: rgba(255, 255, 255, 0.5);
+		font-size: 0.8em;
+		line-height: 1em;
+		margin: 2em 0 0 0;
+		padding: 0;
+		text-align: center;
+	}
+
+		#footer .copyright li {
+			border-left: solid 1px rgba(255, 255, 255, 0.3);
+			display: inline-block;
+			list-style: none;
+			margin-left: 1.5em;
+			padding-left: 1.5em;
+		}
+
+			#footer .copyright li:first-child {
+				border-left: 0;
+				margin-left: 0;
+				padding-left: 0;
+			}
+
+			#footer .copyright li a {
+				color: inherit;
+			}
+
+	/* #footer {
 		background: #272833;
 		padding: 6em 0;
 		text-align: center;
+		
 	}
 
 		#footer .icons .icon.alt {
@@ -3613,6 +3869,14 @@ input, select, textarea {
 					color: inherit;
 				}
 
+		footer#footer.sign-up-footer {
+			background: rgba(33, 33, 41, 0);
+			border-top: 3px solid rgba(131, 130, 130, 0.5);
+			margin-top: 5rem;
+			padding: 5rem 0 0 3rem;
+			
+		} */
+
 /* XLarge */
 
 	@media screen and (max-width: 1680px) {
@@ -3622,6 +3886,19 @@ input, select, textarea {
 			body, input, select, textarea {
 				font-size: 13pt;
 			}
+		
+		/* Logo Weboratory Nav */
+
+		#header span#logo img{
+			height: 53px;
+			margin: .4rem 0 0 1rem;
+		}
+		.indexBtn a.button.primary.fit {
+			position: relative;
+			left: 7.8%;
+			
+		}
+	
 
 	}
 
@@ -3649,6 +3926,18 @@ input, select, textarea {
 				padding: 4.5em 2.5em;
 				width: 25em;
 			}
+		
+		/* Logo Weboratory Nav */
+	
+		#header span#logo img{
+			height: 50px;
+			margin: .2rem 0 0 .65rem;
+			/* background: white; */
+		}
+		
+		#header img.svgFlask {
+			margin-top: 8px;
+		}
 
 		/* Wrapper */
 
@@ -3673,6 +3962,14 @@ input, select, textarea {
 			#footer {
 				padding: 4.5em 0;
 			}
+
+			.indexBtn a.button.primary.fit {
+				position: relative;
+				left: 15.8%;
+				top: 5%;
+
+			}
+		
 
 	}
 
@@ -3730,6 +4027,14 @@ input, select, textarea {
 				.spotlight .goto-next {
 					display: none;
 				}
+		
+		/* Logo Weboratory Nav */
+		
+		#header span#logo img{
+			height: 50px;
+			margin: .2rem 0 0 .7rem;
+			/* background: white; */
+		}
 
 		/* Wrapper */
 
@@ -3768,6 +4073,14 @@ input, select, textarea {
 				padding: 4.5em 0;
 			}
 
+			.indexBtn a.button.primary.fit {
+				position: relative;
+				left: 32%;
+				top: 5%;
+				
+				
+			}
+
 	}
 
 /* Small */
@@ -3799,6 +4112,7 @@ input, select, textarea {
 			h4 {
 				font-size: 1em;
 			}
+
 
 		/* Section/Article */
 
@@ -3855,9 +4169,19 @@ input, select, textarea {
 
 		/* Header */
 
+
 			#header {
 				display: none;
 			}
+			
+			span.title img{
+				height: 46px;
+				margin-top: -1px;
+				
+				/* background: white; */
+			}
+	
+
 
 		/* Banner */
 
@@ -3917,6 +4241,9 @@ input, select, textarea {
 				background: #272833;
 				box-shadow: 0 0.125em 0.125em 0 rgba(0, 0, 0, 0.125);
 			}
+				#titleBar .top-logo img {
+					display: none;
+				}
 
 				#titleBar .title {
 					color: #ffffff;
@@ -3928,7 +4255,10 @@ input, select, textarea {
 				}
 
 					#titleBar .title a {
-						color: inherit;
+						color: var(--primaryAccentColor);
+						font-family: 'Voces', cursive;
+						font-size: 1.4rem;
+						font-weight: bold;	
 						border: 0;
 					}
 
@@ -4064,6 +4394,16 @@ input, select, textarea {
 				-ms-transform: translateX(0);
 				transform: translateX(0);
 			}
+		
+		/* Testimonial */
+		.testimonial-container {
+			display: block;
+			margin-left: 9rem;
+			width: 80%;
+		}
+		figure.snip1192 {
+			margin-top: 3rem;
+		}
 
 		/* Footer */
 
@@ -4071,6 +4411,13 @@ input, select, textarea {
 				padding: 3.25em 1.5em;
 			}
 
+
+			.indexBtn a.button.primary.fit {
+				position: relative;
+				left: 23%;
+				top: 5%;
+				
+			}
 	}
 
 /* XSmall */
@@ -4117,7 +4464,21 @@ input, select, textarea {
 			#banner .content {
 				padding: 3em 1.5625em 5.25em 1.5625em;
 			}
-
+		/*Logo*/
+		 /* span#logo img{
+			height: 41px;
+			margin-top: -10px;
+			/* background: white; */
+		
+		/* Testimonial */
+		.testimonial-container {
+			display: block;
+		}
+		figure.snip1192 {
+			margin-top: 3rem;
+			margin-left: -6.75rem;
+		}
+		
 		/* Footer */
 
 			#footer {
@@ -4135,4 +4496,11 @@ input, select, textarea {
 						padding: 0;
 					}
 
-	}
+					.indexBtn a.button.primary.fit {
+						position: relative;
+						left: 13%;
+						top: 5%;
+						
+					}
+
+				}
